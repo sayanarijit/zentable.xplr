@@ -1,13 +1,9 @@
-xplr plugin template
-====================
+zentable
+========
 
-Use this template to [write your own xplr plugin](https://arijitbasu.in/xplr/en/writing-plugins.html).
+A clean, distraction free xplr table UI.
 
-
-Requirements
-------------
-
-- Some tool
+[![imagef13d099816205f02.png](https://s6.gifyu.com/images/imagef13d099816205f02.png)](https://gifyu.com/image/O0yX)
 
 
 Installation
@@ -26,26 +22,11 @@ Installation
   ```bash
   mkdir -p ~/.config/xplr/plugins
 
-  git clone https://github.com/me/{plugin}.xplr ~/.config/xplr/plugins/{plugin}
+  git clone https://github.com/me/zentable.xplr ~/.config/xplr/plugins/zentable
   ```
 
 - Require the module in `~/.config/xplr/init.lua`
 
   ```lua
-  require("{plugin}").setup()
-  
-  -- Or
-  
-  require("{plugin}").setup{
-    mode = "action",
-    key = ":",
-  }
-
-  -- Type `::` and enjoy.
+  require("zentable").setup()
   ```
-
-
-Features
---------
-
-- Some cool feature
