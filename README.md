@@ -4,6 +4,7 @@ zentable
 A clean, distraction free xplr table UI.
 
 [![imagef13d099816205f02.png](https://s6.gifyu.com/images/imagef13d099816205f02.png)](https://gifyu.com/image/O0yX)
+[![image247d47b5aed1d889.png](https://s6.gifyu.com/images/image247d47b5aed1d889.png)](https://gifyu.com/image/O0XM)
 
 
 Installation
