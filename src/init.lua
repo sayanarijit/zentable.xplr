@@ -3,7 +3,7 @@ local function setup()
 
   xplr.fn.custom.zentable_path = function(m)
     local slash = ""
-    if m.canonical.is_dir then
+    if m.is_dir then
       slash = "/"
     end
 
@@ -17,6 +17,7 @@ local function setup()
         sym = sym .. m.symlink.absolute_path
 
         if m.symlink.is_dir then
+          slash = "/"
           sym = sym .. "/"
         end
       end
