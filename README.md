@@ -23,7 +23,7 @@ Installation
   ```bash
   mkdir -p ~/.config/xplr/plugins
 
-  git clone https://github.com/me/zentable.xplr ~/.config/xplr/plugins/zentable
+  git clone https://github.com/sayanarijit/zentable.xplr ~/.config/xplr/plugins/zentable
   ```
 
 - Require the module in `~/.config/xplr/init.lua`
