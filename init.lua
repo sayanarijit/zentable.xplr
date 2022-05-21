@@ -23,8 +23,8 @@ local function setup()
       end
     end
 
-    return m.tree
-      .. m.prefix
+    return m.prefix
+      .. m.tree
       .. m.meta.icon
       .. " "
       .. m.relative_path
@@ -34,8 +34,20 @@ local function setup()
   end
 
   xplr.config.general.table.header.cols = {
-    { format = "│" },
+    {},
   }
+
+  xplr.config.general.default_ui.prefix = " "
+  xplr.config.general.default_ui.suffix = ""
+
+  xplr.config.general.focus_ui.prefix = "▏"
+  xplr.config.general.focus_ui.suffix = ""
+
+  xplr.config.general.selection_ui.prefix = "▏"
+  xplr.config.general.selection_ui.suffix = ""
+
+  xplr.config.general.focus_selection_ui.prefix = "▍"
+  xplr.config.general.focus_selection_ui.suffix = ""
 
   xplr.config.general.table.row.cols = {
     { format = "custom.zentable_path" },
@@ -46,9 +58,9 @@ local function setup()
   }
 
   xplr.config.general.table.tree = {
-    { format = "├" },
-    { format = "├" },
-    { format = "╰" },
+    {},
+    {},
+    {},
   }
 end
 
