@@ -2,7 +2,7 @@
 
 A clean, distraction free xplr table UI.
 
-[![image120fe57f1eec4e7f.png](https://s8.gifyu.com/images/image120fe57f1eec4e7f.png)](https://gifyu.com/image/SxTg2)
+[![image3009d116ece8bd45.png](https://s8.gifyu.com/images/image3009d116ece8bd45.png)](https://gifyu.com/image/SxTgo)
 
 ## Installation
 
