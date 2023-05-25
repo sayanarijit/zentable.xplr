@@ -1,56 +1,11 @@
-local paint = nil
-if xplr.util.paint then
-  paint = xplr.util.paint
-else
-  paint = function(s, _)
-    return s
-  end
-end
-
-local lscolor = nil
-if xplr.util.lscolor then
-  lscolor = xplr.util.lscolor
-else
-  lscolor = function(_)
-    return {}
-  end
-end
-
-local style_mix = nil
-if xplr.util.style_mix then
-  style_mix = xplr.util.style_mix
-else
-  style_mix = function(_)
-    return {}
-  end
-end
-
-local shell_escape = nil
-if xplr.util.shell_escape then
-  shell_escape = xplr.util.shell_escape
-else
-  shell_escape = function(s)
-    return s
-  end
-end
-
-local shorten = nil
-if xplr.util.shorten then
-  shorten = xplr.util.shorten
-else
-  shorten = function(s)
-    return s
-  end
-end
+local xplr = xplr
 
 local function setup()
-  local xplr = xplr
-
   xplr.fn.custom.zentable_path = function(m)
-    local nl = paint("\\n", { add_modifiers = { "Italic", "Dim" } })
+    local nl = xplr.util.paint("\\n", { add_modifiers = { "Italic", "Dim" } })
     local r = m.tree .. m.prefix
-    local style = lscolor(m.absolute_path)
-    style = style_mix({ m.style, style })
+    local style = xplr.util.lscolor(m.absolute_path)
+    style = xplr.util.style_mix({ style, m.style })
 
     if m.meta.icon == nil then
       r = r .. ""
@@ -62,7 +17,7 @@ local function setup()
     if m.is_dir then
       rel = rel .. "/"
     end
-    r = r .. paint(shell_escape(rel), style)
+    r = r .. xplr.util.paint(xplr.util.shell_escape(rel), style)
 
     r = r .. m.suffix .. " "
 
@@ -72,7 +27,7 @@ local function setup()
       if m.is_broken then
         r = r .. "×"
       else
-        local symlink_path = shorten(m.symlink.absolute_path)
+        local symlink_path = xplr.util.shorten(m.symlink.absolute_path)
         if m.symlink.is_dir then
           symlink_path = symlink_path .. "/"
         end
