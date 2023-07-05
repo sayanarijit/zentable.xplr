@@ -32,3 +32,9 @@ A clean, distraction free xplr table UI.
   ```lua
   require("zentable").setup()
   ```
+
+## Also See
+
+- [tree-view.xplr](https://github.com/sayanarijit/tree-view.xplr)
+- [dual-pane.xplr](https://github.com/sayanarijit/dual-pane.xplr)
+- [tri-pane.xplr](https://github.com/sayanarijit/tri-pane.xplr)
