@@ -45,10 +45,10 @@ local function setup()
   xplr.config.general.default_ui.prefix = " "
   xplr.config.general.default_ui.suffix = ""
 
-  xplr.config.general.focus_ui.prefix = "│"
+  xplr.config.general.focus_ui.prefix = "▍"
   xplr.config.general.focus_ui.suffix = ""
 
-  xplr.config.general.selection_ui.prefix = "▍"
+  xplr.config.general.selection_ui.prefix = "│"
   xplr.config.general.selection_ui.suffix = ""
 
   xplr.config.general.focus_selection_ui.prefix = "▌"
